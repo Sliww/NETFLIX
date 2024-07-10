@@ -14,7 +14,7 @@
 <body>
 
     <!--NAVBAR-->
-    <nav class="container-fluid">
+    <nav id="navFixed" class="container-fluid">
         <div class="row d-flex justify-content-center pt-2">
             <div class="col-12 ps-1 pe-1 d-flex justify-content-between justify-content-md-start">
                 <div class="d-md-none logo">
@@ -175,7 +175,7 @@
 
     <!--ROWS CON I FILM-->
     <main class="container-fluid">
-         <!--TRENDING NOW-->
+        <!--TRENDING NOW-->
         <!--TITOLO-->
         <div class="row d-flex justify-content-center">
             <div class="col-12">
@@ -254,7 +254,7 @@
             </div>
         </div>
 
-         <!--WATCH IT AGAIN-->
+        <!--WATCH IT AGAIN-->
         <!--TITOLO-->
         <div class="row d-flex justify-content-center">
             <div class="col-12">
@@ -333,7 +333,7 @@
             </div>
         </div>
 
-         <!--NEW RELEASES-->
+        <!--NEW RELEASES-->
         <!--TITOLO-->
         <div class="row d-flex justify-content-center">
             <div class="col-12">
@@ -412,7 +412,7 @@
             </div>
         </div>
 
-         <!--Upcoming-->
+        <!--Upcoming-->
         <!--TITOLO-->
         <div class="row d-flex justify-content-center">
             <div class="col-12">
@@ -491,7 +491,7 @@
             </div>
         </div>
 
-         <!--Best Of Month-->
+        <!--Best Of Month-->
         <!--TITOLO-->
         <div class="row d-flex justify-content-center">
             <div class="col-12">
@@ -570,7 +570,7 @@
             </div>
         </div>
 
-         <!--Continue TO WATCH-->
+        <!--Continue TO WATCH-->
         <!--TITOLO-->
         <div class="row d-flex justify-content-center">
             <div class="col-12">
@@ -653,19 +653,23 @@
     <!--FOOTER SOCIAL E CONTATTI-->
     <footer class="container-fluid pt-3">
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-7 personal">
+            <div class="col-12 col-md-8 pb-2">
                 <!--LOGHI SOCIAL-->
-                <div class="d-flex justify-content-center gap-3">
+                <div class="col-12 d-flex gap-3">
                     <div class="socialLogos d-flex align-items-center justify-content-center">
                         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m0 0h20v20h-20z" fill="none"/>
-                            <path d="m2.89 2h14.23c.49 0 .88.39.88.88v14.24c0 .48-.39.88-.88.88h-4.08v-6.2h2.08l.31-2.41h-2.39v-1.54c0-.7.2-1.18 1.2-1.18h1.28v-2.16c-.22-.03-.98-.09-1.86-.09-1.85 0-3.11 1.12-3.11 3.19v1.78h-2.09v2.41h2.09v6.2h-7.66c-.49 0-.89-.4-.89-.88v-14.24c0-.49.4-.88.89-.88z" fill="rgb(130, 130, 130)"/>
-                          </svg>
+                            <path d="m0 0h20v20h-20z" fill="none" />
+                            <path
+                                d="m2.89 2h14.23c.49 0 .88.39.88.88v14.24c0 .48-.39.88-.88.88h-4.08v-6.2h2.08l.31-2.41h-2.39v-1.54c0-.7.2-1.18 1.2-1.18h1.28v-2.16c-.22-.03-.98-.09-1.86-.09-1.85 0-3.11 1.12-3.11 3.19v1.78h-2.09v2.41h2.09v6.2h-7.66c-.49 0-.89-.4-.89-.88v-14.24c0-.49.4-.88.89-.88z"
+                                fill="rgb(130, 130, 130)" />
+                        </svg>
                     </div>
                     <div class="socialLogos d-flex align-items-center justify-content-center">
                         <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m14.5 0h-13c-.825 0-1.5.675-1.5 1.5v13c0 .825.675 1.5 1.5 1.5h13c.825 0 1.5-.675 1.5-1.5v-13c0-.825-.675-1.5-1.5-1.5zm-3.5 2.5c0-.275.225-.5.5-.5h2c.275 0 .5.225.5.5v2c0 .275-.225.5-.5.5h-2c-.275 0-.5-.225-.5-.5zm-3 2.5c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm6 8.5c0 .275-.225.5-.5.5h-11c-.275 0-.5-.225-.5-.5v-6.5h1.1c-.066.322-.1.656-.1 1 0 2.762 2.237 5 5 5s5-2.238 5-5c0-.344-.034-.678-.1-1h1.1z" fill="rgb(130, 130, 130)"/>
-                          </svg>
+                            <path
+                                d="m14.5 0h-13c-.825 0-1.5.675-1.5 1.5v13c0 .825.675 1.5 1.5 1.5h13c.825 0 1.5-.675 1.5-1.5v-13c0-.825-.675-1.5-1.5-1.5zm-3.5 2.5c0-.275.225-.5.5-.5h2c.275 0 .5.225.5.5v2c0 .275-.225.5-.5.5h-2c-.275 0-.5-.225-.5-.5zm-3 2.5c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm6 8.5c0 .275-.225.5-.5.5h-11c-.275 0-.5-.225-.5-.5v-6.5h1.1c-.066.322-.1.656-.1 1 0 2.762 2.237 5 5 5s5-2.238 5-5c0-.344-.034-.678-.1-1h1.1z"
+                                fill="rgb(130, 130, 130)" />
+                        </svg>
                     </div>
                     <div class="socialLogos d-flex align-items-center justify-content-center">
                         <ion-icon name="logo-twitter"></ion-icon>
@@ -676,78 +680,84 @@
                 </div>
 
                 <!--LISTE DI INFO-->
-                <div class="col-12">
-                    <div class="d-flex justify-content-center">
-                        <ul class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-center pt-1">
-                            <li>
-                                <a href="#">Audio and Subtitles</a>
-                            </li>
-                            <li>
-                                <a href="#">Media Center</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                        </ul>
+                <div class="d-flex flex-column flex-md-row">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex">
+                            <ul
+                                class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
+                                <li>
+                                    <a href="#">Audio and Subtitles</a>
+                                </li>
+                                <li>
+                                    <a href="#">Media Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="d-flex justify-content-center">
-                        <ul class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-center pt-1">
-                            <li>
-                                <a href="#">Audio Description</a>
-                            </li>
-                            <li>
-                                <a href="#">Investor Relations</a>
-                            </li>
-                            <li>
-                                <a href="#">Legal Notices</a>
-                            </li>
-                        </ul>
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex">
+                            <ul
+                                class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
+                                <li>
+                                    <a href="#">Audio Description</a>
+                                </li>
+                                <li>
+                                    <a href="#">Investor Relations</a>
+                                </li>
+                                <li>
+                                    <a href="#">Legal Notices</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="d-flex justify-content-center">
-                        <ul class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-center pt-1">
-                            <li>
-                                <a href="#">Help Center</a>
-                            </li>
-                            <li>
-                                <a href="#">Jobs</a>
-                            </li>
-                            <li>
-                                <a href="#">Cookie Preferences</a>
-                            </li>
-                        </ul>
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex">
+                            <ul
+                                class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
+                                <li>
+                                    <a href="#">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jobs</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cookie Preferences</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="d-flex justify-content-center">
-                        <ul class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-center pt-1">
-                            <li>
-                                <a href="#">Gift Cards</a>
-                            </li>
-                            <li>
-                                <a href="#">Terms of</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy</a>
-                            </li>
-                        </ul>
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex">
+                            <ul
+                                class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
+                                <li>
+                                    <a href="#">Gift Cards</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of</a>
+                                </li>
+                                <li>
+                                    <a href="#">Corporate Informations</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center p-1">
-                <button class="serviceCodeButton">Service Code</button>
+        <div class="row d-flex justify-content-center pb-2">
+            <div class="col-12 col-md-8 d-flex justify-content-end justify-content-md-start">
+                <button class="serviceCodeButton p-1">Service Code</button>
             </div>
         </div>
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-7 d-flex justify-content-center justify-content-md-start">
+            <div class="col-12 col-md-8 d-flex justify-content-end justify-content-md-start">
                 <span class="footerEndSpan">©1997-2019 Netflix,Inc. {i-0d00fcda2fdf9c0de}</span>
             </div>
         </div>
