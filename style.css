@@ -48,8 +48,8 @@ body {
 .menuPrincipale a:hover {
     text-decoration: none;
     color: white;
-    font-family: 'Netflix Sans';
-    font-weight: 400;
+    font-family: 'Arial';
+    
 }
 
 .notificationIcon {
@@ -98,20 +98,42 @@ body {
     border: 1px solid white;
 }
 
+
 .filmCard {
     width: 250px;
     height: 200px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
 }
+
+/*.filmCard:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}*/
+
 
 .swiper-slide {
     width: 250px !important;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.swiper-slide:hover .swiper-wrapper {
+    z-index: 0;
+}
+
+.swiper-slide-active {
+    z-index: 999 !important;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    top:45%;
-    transform: translateY(-50%);
-    transform: translateX();
     color:white;
 }
 
