@@ -1,0 +1,245 @@
+
+
+/*IMPORTATO IL FONT DI NETFLIX*/
+
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+.netflix-sans-font-loaded {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+    font-family: NKufi,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+    font-family: GraphikTH,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.error-page {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    background: rgba(0,0,0,.18);
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    left: 0;
+    margin-top: 68px;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000
+}
+
+/*INIZIO CSS DELLA PAGINA*/
+
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'Netflix Sans';
+}
+
+
+.personal {
+    border: 1px solid white;
+}
+
+.logo img {
+   width: 100px;     
+}
+
+/*DA CELLULARE*/
+
+.burgerMenu {
+    height: 40px;
+    width: 40px;
+}
+
+.buttonBurgerMenu {
+    background: none;
+    color: white;
+    border: none;
+}
+
+.profileLogo {
+    width: 25px;
+    height: 25px;
+}
+
+/*MD e Seguenti*/
+
+.menuPrincipale {
+    font-size: 14px;
+}
+
+.menuPrincipale a {
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+}
+
+.menuPrincipale a:hover {
+    text-decoration: none;
+    color: white;
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+}
+
+.notificationIcon {
+    height: 20px;
+    width: 20px;
+}
+
+/*ROW CON I GENERI DEI FILM*/
+
+.buttonGenres {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/*checkbox mascherate da bottoni per i 2 bottoni display in linea o griglia*/
+
+.radioDisplay {
+    display: none;
+}
+
+.radioLabel {
+    width: 50px;
+    border: 1px solid rgb(112, 109, 109);
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radioLabelToggled {
+    background-color:  rgb(182, 182, 182);
+    border: 1px solid white;
+    color: white;
+}
+
+.radioLabel ion-icon {
+    margin: 0;
+}
+
+.radioDisplay:checked + .radioLabel {
+    background-color:  transparent;
+    border: 1px solid white;
+}
+
+.filmCard {
+    width: 250px;
+    height: 200px;
+}
+
+.swiper-slide {
+    width: 250px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top:45%;
+    transform: translateY(-50%);
+    transform: translateX();
+    color:white;
+}
+
+.footerEndSpan {
+    font-size: 10px;
+    color: rgb(130, 130, 130);
+}
+
+.socialLogos {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    color: rgb(130, 130, 130);
+}
+
+.ulSizeFooter a {
+    text-decoration: none;
+    color: rgb(130, 130, 130);
+    font-size: 12px;
+}
+
+.ulSizeFooter a:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.serviceCodeButton {
+    color: rgb(130, 130, 130);
+    border: 1px solid rgb(130, 130, 130);
+    background-color: transparent;
+    font-size: 12px;
+}
+
+.serviceCodeButton:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 12px;
+}
+
+
+
