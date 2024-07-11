@@ -32,6 +32,17 @@ body {
     height: 25px;
 }
 
+#inputContainerMobile {
+    height: 35px;
+}
+
+#inputContainerMobile input {
+    width: 100px;
+    max-width: 150px;
+    background-color: rgb(17, 17, 17);
+    
+}
+
 /*MD e Seguenti*/
 
 
@@ -56,6 +67,20 @@ body {
     height: 20px;
     width: 20px;
 }
+
+.svg-link svg {
+    fill: white;
+}
+
+#inputContainer {
+    height: 35px;
+}
+
+#inputContainer input {
+    background-color: rgb(17, 17, 17);
+}
+
+  
 
 /*ROW CON I GENERI DEI FILM*/
 
@@ -106,31 +131,21 @@ body {
     position: relative;
 }
 
-/*.filmCard:hover {
-    transform: scale(1.2);
+.filmCard:hover {
+    transform: scale(1.150);
     z-index: 10;
-}*/
+}
 
 
 .swiper-slide {
     width: 250px !important;
-    height: 200px;
-    transition: transform 0.3s ease-in-out;
-    z-index: 1;
 }
 
-.swiper-slide:hover {
-    transform: scale(1.2);
+/*.swiper-slide:hover {
+    transform: scale(1.150);
     z-index: 2;
-}
+}*/
 
-.swiper-slide:hover .swiper-wrapper {
-    z-index: 0;
-}
-
-.swiper-slide-active {
-    z-index: 999 !important;
-}
 
 .swiper-button-prev,
 .swiper-button-next {

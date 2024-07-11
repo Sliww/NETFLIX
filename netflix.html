@@ -17,18 +17,19 @@
     <nav class="container-fluid">
         <div class="row d-flex justify-content-center pt-2">
             <div class="col-12 ps-1 pe-1 d-flex justify-content-between justify-content-md-start">
-                <div class="d-md-none logo">
-                    <img src="./movies/Netflix_Logo_RGB.png" alt="logo">
-                </div>
 
-                <!--MENU MOBILE-->
-                <div class="rightMenu d-md-none d-flex align-items-center">
+                <!--MENU MOBILE vecchio non funzionante-->
+                <!--<div class="rightMenu d-md-none d-flex align-items-center personal">
                     <div class="burgerMenu d-flex justify-content-center align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21" fill="currentColor"
-                            class="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                        </svg>
+                        <div id="inputContainerMobile" class="flex-grow-1 personal d-flex gap-2 p-1">
+                            <a class="svg-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="d-md-none dropdown d-flex justify-content-center align-items-center">
                         <button class="buttonBurgerMenu d-flex justify-content-center align-items-center" type="button"
@@ -56,6 +57,54 @@
                             <li><a class="dropdown-item" href="#">Kids</a></li>
                         </ul>
                     </div>
+                </div>-->
+
+                <!--MENU MOBILE-->
+                <div class="d-flex d-md-none w-100">
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="d-flex">
+                            <div class="logo">
+                                <img src="./movies/Netflix_Logo_RGB.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div id="inputContainerMobile" class="flex-grow-1 d-flex gap-2 p-1">
+                                <a class="svg-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="d-md-none dropdown d-flex justify-content-center align-items-center">
+                                <button class="buttonBurgerMenu d-flex justify-content-center align-items-center" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <ion-icon class="burgerMenu" name="menu-sharp"></ion-icon>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <div class="d-flex justify-content-around gap-2">
+                                                <img class="profileLogo" src="./movies/profile.jpg" alt="logo profile">
+                                                <span>Jerry Scotti</span>
+                                            </div>
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Subscription</a></li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Home</a></li>
+                                    <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                                    <li><a class="dropdown-item" href="#">Movies</a></li>
+                                    <li><a class="dropdown-item" href="#">Recently Added</a></li>
+                                    <li><a class="dropdown-item" href="#">My List</a></li>
+                                    <li><a class="dropdown-item" href="#">Kids</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!--MENU DA TABLET IN POI-->
@@ -65,7 +114,8 @@
                             <div class="logo">
                                 <img src="./movies/Netflix_Logo_RGB.png" alt="">
                             </div>
-                            <div class="menuPrincipale d-none d-md-flex align-items-center">
+                            <div id="menuScomparsaAlToggle"
+                                class="menuPrincipale d-none d-md-flex d-lg-flex align-items-center">
                                 <ul class="d-flex gap-3 list-unstyled align-items-center mb-0 ms-4 me-1">
                                     <li>
                                         <a href="#">Home</a>
@@ -85,13 +135,17 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center ">
+                        <div class="d-flex align-items-center">
                             <div class="d-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                </svg>
+                                <div id="inputContainer" class="d-flex gap-2 p-1">
+                                    <a class="svg-link" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21"
+                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                             <div class="menuPrincipale d-none d-md-flex align-items-center">
                                 <ul class="d-flex list-unstyled align-items-center mb-0  me-1 ms-1">
@@ -141,19 +195,15 @@
                     class="d-flex gap-2 gap-md-3 flex-column justify-content-center flex-md-row justify-content-md-start">
                     <h1 class="mb-0 d-flex ms-md-5 fs-1">TV Shows</h1>
                     <div class="dropdown d-flex align-items-center">
-                        <button class="buttonGenres d-flex justify-content-center align-items-center p-1" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Genres
-                            <ion-icon class="ms-3" name="caret-down-outline"></ion-icon>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Commedy</a></li>
-                            <li><a class="dropdown-item" href="#">Horror</a></li>
-                            <li><a class="dropdown-item" href="#">Survival</a></li>
-                            <li><a class="dropdown-item" href="#">Anime</a></li>
-                            <li><a class="dropdown-item" href="#">Fantasy</a></li>
-                        </ul>
+                        <select id="genres" class="buttonGenres p-1">
+                            <option value="all">All</option>
+                            <option value="action">Action</option>
+                            <option value="commedy">Commedy</option>
+                            <option value="horror">Horror</option>
+                            <option value="survival">Survival</option>
+                            <option value="anime">Anime</option>
+                            <option value="fantasy">Fantasy</option>
+                        </select>
                     </div>
                 </div>
                 <div class="d-flex align-items-center me-md-5">
@@ -177,13 +227,13 @@
     <main class="container-fluid">
         <!--TRENDING NOW-->
         <!--TITOLO-->
-        <div class="row d-flex justify-content-center">
+        <div class="action row d-flex justify-content-center">
             <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Trending Now</h5>
+                <h5 class="fs-5 ms-md-5 mb-0">Action</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="row pb-3">
+        <div class="action row pb-3">
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -256,13 +306,13 @@
 
         <!--WATCH IT AGAIN-->
         <!--TITOLO-->
-        <div class="row d-flex justify-content-center">
+        <div class="commedy row d-flex justify-content-center">
             <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Watch It Again</h5>
+                <h5 class="fs-5 ms-md-5 mb-0">Commedy</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="row pb-3">
+        <div class="commedy row pb-3">
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -335,13 +385,13 @@
 
         <!--NEW RELEASES-->
         <!--TITOLO-->
-        <div class="row d-flex justify-content-center">
+        <div class="horror row d-flex justify-content-center">
             <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">New Releases</h5>
+                <h5 class="fs-5 ms-md-5 mb-0">Horror</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="row pb-3">
+        <div class="horror row pb-3">
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -414,13 +464,13 @@
 
         <!--Upcoming-->
         <!--TITOLO-->
-        <div class="row d-flex justify-content-center">
+        <div class="survival row d-flex justify-content-center">
             <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Upcoming</h5>
+                <h5 class="fs-5 ms-md-5 mb-0">Survival</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="row pb-3">
+        <div class="survival row pb-3">
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -493,13 +543,13 @@
 
         <!--Best Of Month-->
         <!--TITOLO-->
-        <div class="row d-flex justify-content-center">
+        <div class="anime row d-flex justify-content-center">
             <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Best Of Month</h5>
+                <h5 class="fs-5 ms-md-5 mb-0">Anime</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="row pb-3">
+        <div class="anime row pb-3">
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -572,13 +622,13 @@
 
         <!--Continue TO WATCH-->
         <!--TITOLO-->
-        <div class="row d-flex justify-content-center">
+        <div class="fantasy row d-flex justify-content-center">
             <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Continue To Watch</h5>
+                <h5 class="fs-5 ms-md-5 mb-0">Fantasy</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="row pb-5">
+        <div class="fantasy row pb-5">
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
