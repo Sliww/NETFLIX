@@ -43,6 +43,34 @@ body {
     
 }
 
+/*BURGER MENU DA MOBILE OFFCANVAS DAL BASSO*/
+
+.offcanvas {
+    background-color: #232323;
+    --bs-offcanvas-height: 50vh;
+}
+
+.profileLogoOff {
+    width: 35px;
+    height: 35px;
+}
+
+.dividerOff {
+    width: 40vh;
+}
+
+.menuOffCanvas li a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+.menuOffCanvas li a:hover {
+    color: white;
+}
+
+
 /*MD e Seguenti*/
 
 
