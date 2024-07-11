@@ -108,6 +108,8 @@ body {
     background-color: rgb(17, 17, 17);
 }
 
+
+
   
 
 /*ROW CON I GENERI DEI FILM*/
@@ -157,6 +159,7 @@ body {
     height: 200px;
     transition: all 0.3s ease-in-out;
     position: relative;
+    cursor: pointer;
 }
 
 .filmCard:hover {
@@ -169,15 +172,48 @@ body {
     width: 250px !important;
 }
 
-/*.swiper-slide:hover {
-    transform: scale(1.150);
+.visibleOnScroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visibleOnScroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 80%, #141414 95%);
     z-index: 2;
-}*/
+    pointer-events: none;
+}
 
 
-.swiper-button-prev,
+
+/*.swiper-button-prev,
 .swiper-button-next {
     color:white;
+    z-index: 10 !important;
+}*/
+
+.swiper-button-prev {
+    color:white;
+    z-index: 10 !important;
+    width: 22.61px;
+    transform: translate(0, -80%);
+}
+
+.swiper-button-next {
+    color:white;
+    z-index: 10 !important;
+    width: 22.61px;
+    transform: translate(0, -80%);
 }
 
 .footerEndSpan {

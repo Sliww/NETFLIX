@@ -77,8 +77,9 @@
                                     </svg>
                                 </a>
                             </div>
-                            <button class="buttonBurgerMenu d-flex justify-content-center align-items-center" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                            <button class="buttonBurgerMenu d-flex justify-content-center align-items-center"
+                                type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom">
                                 <ion-icon class="burgerMenu" name="menu-sharp"></ion-icon>
                             </button>
 
@@ -167,7 +168,7 @@
                             <div class="d-flex justify-content-center align-items-center ms-2">
                                 <ion-icon class="notificationIcon" name="notifications"></ion-icon>
                             </div>
-                            <div class="dropdown d-flex justify-content-center ms-2 align-items-center me-md-5">
+                            <!--<div class="dropdown d-flex justify-content-center ms-2 align-items-center me-md-5">
                                 <button class="buttonBurgerMenu d-flex justify-content-center align-items-center"
                                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img class="profileLogo" src="./movies/profile.jpg" alt="logo profile">
@@ -187,6 +188,53 @@
                                         <hr class="dropdown-divider">
                                     </li>
                                 </ul>
+                            </div>-->
+                            <div class="dropdown d-flex justify-content-center ms-2 align-items-center me-md-5">
+                                <button class="buttonBurgerMenu d-flex justify-content-center align-items-center"
+                                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight">
+                                    <img class="profileLogo" src="./movies/profile.jpg" alt="logo profile">
+                                    <ion-icon class="ms-1" name="caret-forward-outline"></ion-icon>
+                                </button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Profile</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body personal">
+                                        <div class="personal d-flex justify-content-center align-items-center gap-3 pb-3">
+                                            <img class="profileLogoOff" src="./movies/profile.jpg" alt="logo profile">
+                                            <span class="text-white fs-3">Mateusz Sliwinski</span>
+                                        </div>
+                                        <div class="personal d-flex justify-content-center align-items-center">
+                                            <div class="dropdown">
+                                                <button class="buttonBurgerMenu dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                                  My Profile
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-dark">
+                                                  <li><a class="dropdown-item" href="#">Subscription</a></li>
+                                                  <li><a class="dropdown-item" href="#">Payments Methods</a></li>
+                                                  <li><a class="dropdown-item" href="#">Delete Account</a></li>
+                                                </ul>
+                                              </div>
+                                        </div>
+                                        <div class="personal">
+                                            <div class="menuOffCanvas">
+                                                <ul class="pt-2 ps-0 d-flex gap-2 flex-column align-items-center">
+                                                    <li><a href="#">Devices</a></li>
+                                                    <li><a href="#">Settings</a></li>
+                                                    <li><a href="#">Logout</a></li>
+                                                    <li><a href="#">Languages</a></li>
+                                                    <li><a href="#">Help Center</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="personal"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,7 +263,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="d-flex align-items-center me-md-5">
+                <div class="d-flex align-items-md-center align-items-end me-md-5">
                     <div class="d-flex gap-2">
                         <input type="radio" id="buttonLines" name="view" class="radioDisplay">
                         <label for="buttonLines" class="radioLabel">
@@ -236,13 +284,14 @@
     <main class="container-fluid">
         <!--TRENDING NOW-->
         <!--TITOLO-->
-        <div class="trendingNow row d-flex justify-content-center">
+        <div class="row visibleOnScroll trendingNow d-flex justify-content-center">
             <div class="col-12">
                 <h5 class="fs-5 ms-md-5 mb-0">Trending Now</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="trendingNow row pb-3">
+        <div class="row visibleOnScroll trendingNow pb-3">
+            <div class="gradient-overlay"></div>
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -306,22 +355,22 @@
                         </div>
                     </div>
                 </div>
-
-                <!--Bottoni di navigazione per le cards-->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
+            <!--Bottoni di navigazione per le cards-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
         <!--WATCH IT AGAIN-->
         <!--TITOLO-->
-        <div class="commedy row d-flex justify-content-center">
+        <div class="row visibleOnScroll commedy d-flex justify-content-center">
             <div class="col-12">
                 <h5 class="fs-5 ms-md-5 mb-0">Watch it Again</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="commedy row pb-3">
+        <div class="row visibleOnScroll commedy pb-3">
+            <div class="gradient-overlay"></div>
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -385,22 +434,22 @@
                         </div>
                     </div>
                 </div>
-
-                <!--Bottoni di navigazione per le cards-->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
+            <!--Bottoni di navigazione per le cards-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
         <!--NEW RELEASES-->
         <!--TITOLO-->
-        <div class="horror row d-flex justify-content-center">
+        <div class="row horror visibleOnScroll d-flex justify-content-center">
             <div class="col-12">
                 <h5 class="fs-5 ms-md-5 mb-0">New Releases</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="horror row pb-3">
+        <div class="row horror visibleOnScroll pb-3">
+            <div class="gradient-overlay"></div>
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -464,22 +513,22 @@
                         </div>
                     </div>
                 </div>
-
-                <!--Bottoni di navigazione per le cards-->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
+            <!--Bottoni di navigazione per le cards-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
         <!--Upcoming-->
         <!--TITOLO-->
-        <div class="survival row d-flex justify-content-center">
+        <div class="row survival visibleOnScroll d-flex justify-content-center">
             <div class="col-12">
                 <h5 class="fs-5 ms-md-5 mb-0">Upcoming</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="survival row pb-3">
+        <div class="row survival visibleOnScroll pb-3">
+            <div class="gradient-overlay"></div>
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -543,22 +592,22 @@
                         </div>
                     </div>
                 </div>
-
-                <!--Bottoni di navigazione per le cards-->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
+            <!--Bottoni di navigazione per le cards-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
         <!--Best Of Month-->
         <!--TITOLO-->
-        <div class="anime row d-flex justify-content-center">
+        <div class="row anime visibleOnScroll d-flex justify-content-center">
             <div class="col-12">
                 <h5 class="fs-5 ms-md-5 mb-0">Best of Month</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="anime row pb-3">
+        <div class="row anime visibleOnScroll pb-3">
+            <div class="gradient-overlay"></div>
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -622,22 +671,22 @@
                         </div>
                     </div>
                 </div>
-
-                <!--Bottoni di navigazione per le cards-->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
+            <!--Bottoni di navigazione per le cards-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
         <!--Continue TO WATCH-->
         <!--TITOLO-->
-        <div class="fantasy row d-flex justify-content-center">
+        <div class="row fantasy visibleOnScroll d-flex justify-content-center">
             <div class="col-12">
                 <h5 class="fs-5 ms-md-5 mb-0">Continue to Watch</h5>
             </div>
         </div>
         <!--CARDS IN SWIPER-->
-        <div class="fantasy row pb-5">
+        <div class="row fantasy visibleOnScroll pb-4 mb-5">
+            <div class="gradient-overlay"></div>
             <div class="swiper">
                 <div class="swiper-wrapper ms-md-5">
                     <div class="swiper-slide">
@@ -701,16 +750,15 @@
                         </div>
                     </div>
                 </div>
-
-                <!--Bottoni di navigazione per le cards-->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
+            <!--Bottoni di navigazione per le cards-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </main>
 
     <!--FOOTER SOCIAL E CONTATTI-->
-    <footer class="container-fluid pt-3">
+    <footer class="container-fluid pt-5 mt-5">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-8 pb-2">
                 <!--LOGHI SOCIAL-->

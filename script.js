@@ -5,7 +5,7 @@ const swiper = new Swiper(".swiper", {
         prevEl: '.swiper-button-prev',
       },
       slidesPerView: "auto",
-      spaceBetween: 25,
+      spaceBetween: 17,
 })
 
 /*SCELTA DEL GENERE DI FILM*/
@@ -77,3 +77,30 @@ const toggleInputMobile = () => {
 }
 
 anchorInputMobile.addEventListener("click", toggleInputMobile);
+
+/*Comparsa delle ROW allo scroll*/
+
+const visibleOnScroll = document.querySelectorAll(".visibleOnScroll");
+
+const options = {
+  rootMargin: "0px",
+  threshold: 0.05,
+}
+
+const callBack = (entries, observer)=>{
+  entries.forEach(entry =>{
+    if (entry.isIntersecting){
+      entry.target.classList.add("visible");
+      /*observer.unobserve(entry.target);*/
+    } else {
+      entry.target.classList.remove("visible");
+    }
+  })
+}
+
+const observer = new IntersectionObserver(callBack, options);
+
+visibleOnScroll.forEach(element =>{
+  observer.observe(element);
+})
+
