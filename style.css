@@ -108,7 +108,16 @@ body {
     background-color: rgb(17, 17, 17);
 }
 
-
+#videoContainer {
+    position: relative;
+    height: 220px;
+    margin: 0 auto;
+ }
+  
+#videoContainer iframe {
+    width: 100%;
+    height: 100%;
+}
 
   
 
