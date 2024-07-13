@@ -1,3 +1,21 @@
+/* codice per l'animazione iniziale*/
+/*Ascolta il caricamento della pagina e dopo 3 sEcondi fa partire i comandi di aggiunta e rimozione*/
+
+const overlayGeneral = document.getElementById("overlayGeneral");
+const contentGeneral = document.getElementById("contentGeneral");
+
+document.addEventListener("DOMContentLoaded", ()=> {
+  
+  setTimeout(function() {
+      
+      overlayGeneral.classList.add("d-none");
+      
+      contentGeneral.classList.remove("d-none");
+  }, 3000);
+});
+
+
+/* SWIPER */
 const swiper = new Swiper(".swiper", {
     direction: "horizontal",
     navigation: {
@@ -103,3 +121,6 @@ const observer = new IntersectionObserver(callBack, options);
 visibleOnScroll.forEach(element =>{
   observer.observe(element);
 })
+
+
+

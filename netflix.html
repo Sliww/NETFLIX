@@ -13,141 +13,49 @@
 
 <body>
 
-    <!--NAVBAR-->
-    <nav class="container-fluid">
-        <div class="row d-flex justify-content-center pt-2">
-            <div class="col-12 ps-1 pe-1 d-flex justify-content-between justify-content-md-start">
+<!--CONTENUTO INIZIALE TEMPORANEO CON IL LOGO-->   
 
-                <!--MENU MOBILE vecchio non funzionante-->
-                <!--<div class="rightMenu d-md-none d-flex align-items-center personal">
-                    <div class="burgerMenu d-flex justify-content-center align-items-center">
-                        <div id="inputContainerMobile" class="flex-grow-1 personal d-flex gap-2 p-1">
-                            <a class="svg-link" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="d-md-none dropdown d-flex justify-content-center align-items-center">
-                        <button class="buttonBurgerMenu d-flex justify-content-center align-items-center" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <ion-icon class="burgerMenu" name="menu-sharp"></ion-icon>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">
-                                    <div class="d-flex justify-content-around gap-2">
-                                        <img class="profileLogo" src="./movies/profile.jpg" alt="logo profile">
-                                        <span>Jerry Scotti</span>
-                                    </div>
-                                </a></li>
-                            <li><a class="dropdown-item" href="#">Subscription</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Home</a></li>
-                            <li><a class="dropdown-item" href="#">TV Shows</a></li>
-                            <li><a class="dropdown-item" href="#">Movies</a></li>
-                            <li><a class="dropdown-item" href="#">Recently Added</a></li>
-                            <li><a class="dropdown-item" href="#">My List</a></li>
-                            <li><a class="dropdown-item" href="#">Kids</a></li>
-                        </ul>
-                    </div>
-                </div>-->
+    <div id="overlayGeneral" class="d-flex align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <svg class="logoNetflix" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48"
+                width="320px" height="320px">
+                <path id="enne" class="n" fill="#F44336"
+                    d="M5,18c0.7,0,1.3,0,2,0c0,4.1,0,8.1,0,12.2c-0.8,0.1-1.6,0.2-2.3,0.3c-1-2.5-2.7-6.8-2.7-6.8S2,28,2,30.8c0.4,0-0.2,0-2,0.3c0-4.3,0-8.7,0-13c0.8,0,2,0,2,0l3,7.3C5,25.4,5,20.8,5,18z" />
+                <path id="ee" class="e" fill="#F44336"
+                    d="M14.7,20c0-0.6,0-1.4,0-2c-1.9,0-3.8,0-5.7,0c0,4,0,8,0,12c1.9-0.2,3.8-0.4,5.7-0.6c0-0.6,0-1.4,0-2c-1.2,0.1-2.4,0.1-3.7,0.4c0-1.1,0-1.7,0-2.8c0.9,0,2.1,0,3,0c0-0.6,0-1.4,0-2c-0.9,0-2.1,0-3,0c0-1.1,0-1.9,0-3C11.6,20.1,14.2,20.1,14.7,20z" />
+                <path id="ti" class="t" fill="#F44336"
+                    d="M16,20c0.1,0,1.9,0,2,0c0,3.2,0,6,0,9.2c0.7,0,1.3,0,2-0.1c0-3.2,0-5.9,0-9.1c0.7,0,1.3,0,2,0c0-0.6,0-1.4,0-2c-2.1,0-3.9,0-6,0C16,18.6,16,19.4,16,20z" />
+                <path id="effe" class="f" fill="#F44336"
+                    d="M28.6,18c-1.9,0-3.7,0-5.6,0c0,3.8,0,7.2,0,11c0.2,0,0.4,0,0.6,0c0.4,0,0.9,0,1.4,0c0-1.6,0-2.4,0-4c0.1,0,2.4,0,2.7,0c0-0.6,0-1.4,0-2c-0.3,0-2.6,0-2.7,0c0-1,0-2,0-3c0.2,0,3.1,0,3.6,0C28.6,19.5,28.6,18.6,28.6,18z" />
+                <path id="elle" class="l" fill="#F44336"
+                    d="M32,27.5c0-3.3,0-6.2,0-9.5c-0.7,0-1.3,0-2,0c0,3.8,0,7.4,0,11.2c1.8,0.1,3.6,0.2,5.4,0.4c0-0.6,0-1.3,0-1.9C34.3,27.6,33.1,27.5,32,27.5z" />
+                <path id="ii" class="i" fill="#F44336"
+                    d="M37,29.7c0.7,0.1,1.3,0.1,2,0.2c0-4,0-7.9,0-11.9c-0.7,0-1.3,0-2,0C37,22,37,25.8,37,29.7z" />
+                <path id="ix" class="x" fill="#F44336"
+                    d="M45.4,24.2c0.9-2,1.7-4,2.6-6.1c-0.7,0-1.5,0-2.2,0c-0.5,1.3-0.9,2.2-1.4,3.4c-0.5-1.3-0.8-2.2-1.3-3.4c-0.7,0-1.5,0-2.2,0c0.8,2,1.5,4,2.4,6.1c-0.9,2-1.7,4-2.6,6c0.7,0.1,1.4,0.2,2.1,0.3c0.5-1.3,1-2.2,1.5-3.5c0.5,1.4,1,2.4,1.5,3.8c0.7,0.1,1.6,0.2,2.3,0.3C47.1,28.7,46.2,26.3,45.4,24.2z" />
+            </svg>
+        </div>
+    </div>
 
-                <!--MENU MOBILE-->
-                <div class="d-flex d-md-none w-100">
-                    <div class="d-flex w-100 justify-content-between">
-                        <div class="d-flex">
-                            <div class="logo">
-                                <img src="./movies/Netflix_Logo_RGB.png" alt="">
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div id="inputContainerMobile" class="flex-grow-1 d-flex gap-2 p-1">
-                                <a class="svg-link" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21" fill="currentColor"
-                                        class="bi bi-search" viewBox="0 0 16 16">
-                                        <path
-                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <button class="buttonBurgerMenu d-flex justify-content-center align-items-center"
-                                type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-                                aria-controls="offcanvasBottom">
-                                <ion-icon class="burgerMenu" name="menu-sharp"></ion-icon>
-                            </button>
+<!--PAGINA COMPLETA-->
+    <div id="contentGeneral" class="d-none">
+        <!--NAVBAR-->
+        <nav class="container-fluid fixedNavbar">
+            <div class="row d-flex justify-content-center pt-2">
+                <div class="col-12 ps-1 pe-1 d-flex justify-content-between justify-content-md-start">
 
-                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
-                                aria-labelledby="offcanvasBottomLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title text-white" id="offcanvasBottomLabel">Menu</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body small">
-                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                        <img class="profileLogoOff" src="./movies/profile.jpg" alt="logo profile">
-                                        <span class="text-white fs-3">Mateusz Sliwinski</span>
-                                    </div>
-                                    <div class="menuOffCanvas">
-                                        <ul class="pt-2 ps-0 d-flex gap-2 flex-column align-items-center">
-                                            <li><a href="#">Subscription</a></li>
-                                            <li><a href="#">Settings</a></li>
-                                            <li><a href="#">Logout</a></li>
-                                            <li>
-                                                <hr class="dividerOff text-white">
-                                            </li>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">TV Shows</a></li>
-                                            <li><a href="#">Movies</a></li>
-                                            <li><a href="#">Recently Added</a></li>
-                                            <li><a href="#">My List</a></li>
-                                            <li><a href="#">Kids</a></li>
-                                        </ul>
-                                    </div>
+
+                    <!--MENU MOBILE-->
+                    <div class="d-flex d-md-none w-100">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="d-flex">
+                                <div class="logo">
+                                    <img src="./movies/Netflix_Logo_RGB.png" alt="">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--MENU DA TABLET IN POI-->
-                <div class="d-none d-md-flex w-100">
-                    <div class="d-flex w-100 justify-content-between">
-                        <div class="d-flex ms-md-5">
-                            <div class="logo">
-                                <img src="./movies/Netflix_Logo_RGB.png" alt="">
-                            </div>
-                            <div id="menuScomparsaAlToggle"
-                                class="menuPrincipale d-none d-md-flex d-lg-flex align-items-center">
-                                <ul class="d-flex gap-3 list-unstyled align-items-center mb-0 ms-4 me-1">
-                                    <li>
-                                        <a href="#">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">TV Shows</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Movies</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Recently Added</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">My List</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div id="inputContainer" class="d-flex gap-2 p-1">
+                            <div class="d-flex align-items-center">
+                                <div id="inputContainerMobile" class="flex-grow-1 d-flex gap-2 p-1">
                                     <a class="svg-link" href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21"
                                             fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -156,86 +64,153 @@
                                         </svg>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="menuPrincipale d-none d-md-flex align-items-center">
-                                <ul class="d-flex list-unstyled align-items-center mb-0  me-1 ms-1">
-                                    <li>
-                                        <a href="#">KIDS</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center ms-2">
-                                <ion-icon class="notificationIcon" name="notifications"></ion-icon>
-                            </div>
-                            <!--<div class="dropdown d-flex justify-content-center ms-2 align-items-center me-md-5">
                                 <button class="buttonBurgerMenu d-flex justify-content-center align-items-center"
-                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img class="profileLogo" src="./movies/profile.jpg" alt="logo profile">
-                                    <ion-icon class="ms-1" name="caret-down-outline"></ion-icon>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
-                                            <div class="d-flex justify-content-around gap-2">
-                                                <img class="profileLogo" src="./movies/profile.jpg" alt="logo profile">
-                                                <span>Jerry Scotti</span>
-                                            </div>
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="#">Subscription</a></li>
-                                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                </ul>
-                            </div>-->
-                            <div class="dropdown d-flex justify-content-center ms-2 align-items-center me-md-5">
-                                <button class="buttonBurgerMenu d-flex justify-content-center align-items-center"
-                                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight">
-                                    <img class="profileLogo" src="./movies/profile.jpg" alt="logo profile">
-                                    <ion-icon class="ms-1" name="caret-forward-outline"></ion-icon>
+                                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                    aria-controls="offcanvasBottom">
+                                    <ion-icon class="burgerMenu" name="menu-sharp"></ion-icon>
                                 </button>
 
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                                    aria-labelledby="offcanvasBottomLabel">
                                     <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Profile</h5>
+                                        <h5 class="offcanvas-title text-white" id="offcanvasBottomLabel">Menu</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                     </div>
-                                    <div class="offcanvas-body">
-                                        <div class="d-flex justify-content-center align-items-center gap-3 pb-3">
+                                    <div class="offcanvas-body small">
+                                        <div class="d-flex justify-content-center align-items-center gap-3">
                                             <img class="profileLogoOff" src="./movies/profile.jpg" alt="logo profile">
                                             <span class="text-white fs-3">Mateusz Sliwinski</span>
                                         </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <div class="dropdown">
-                                                <button class="buttonBurgerMenu dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                                  My Profile
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-dark">
-                                                  <li><a class="dropdown-item" href="#">Subscription</a></li>
-                                                  <li><a class="dropdown-item" href="#">Payments Methods</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete Account</a></li>
-                                                </ul>
-                                              </div>
+                                        <div class="menuOffCanvas">
+                                            <ul class="pt-2 ps-0 d-flex gap-2 flex-column align-items-center">
+                                                <li><a href="#">Subscription</a></li>
+                                                <li><a href="#">Settings</a></li>
+                                                <li><a href="#">Logout</a></li>
+                                                <li>
+                                                    <hr class="dividerOff text-white">
+                                                </li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">TV Shows</a></li>
+                                                <li><a href="#">Movies</a></li>
+                                                <li><a href="#">Recently Added</a></li>
+                                                <li><a href="#">My List</a></li>
+                                                <li><a href="#">Kids</a></li>
+                                            </ul>
                                         </div>
-                                        <div>
-                                            <div class="menuOffCanvas">
-                                                <ul class="pt-2 ps-0 d-flex gap-2 flex-column align-items-center">
-                                                    <li><a href="#">Devices</a></li>
-                                                    <li><a href="#">Settings</a></li>
-                                                    <li><a href="#">Logout</a></li>
-                                                    <li><a href="#">Languages</a></li>
-                                                    <li><a href="#">Help Center</a></li>
-                                                </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--MENU DA TABLET IN POI-->
+                    <div class="d-none d-md-flex w-100">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="d-flex ms-md-5">
+                                <div class="logo">
+                                    <img src="./movies/Netflix_Logo_RGB.png" alt="">
+                                </div>
+                                <div id="menuScomparsaAlToggle"
+                                    class="menuPrincipale d-none d-md-flex d-lg-flex align-items-center">
+                                    <ul class="d-flex gap-3 list-unstyled align-items-center mb-0 ms-4 me-1">
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TV Shows</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Movies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Recently Added</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">My List</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div id="inputContainer" class="d-flex gap-2 p-1">
+                                        <a class="svg-link" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menuPrincipale d-none d-md-flex align-items-center">
+                                    <ul class="d-flex list-unstyled align-items-center mb-0  me-1 ms-1">
+                                        <li>
+                                            <a href="#">KIDS</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center ms-2">
+                                    <ion-icon class="notificationIcon" name="notifications"></ion-icon>
+                                </div>
+                                <div class="dropdown d-flex justify-content-center ms-2 align-items-center me-md-5">
+                                    <button id="buttonClicked"
+                                        class=" buttonBurgerMenu d-flex justify-content-center align-items-center"
+                                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">
+                                        <img class="profileLogo" src="./movies/profile.jpg" alt="logo profile">
+                                        <ion-icon class="ms-1" name="caret-forward-outline"></ion-icon>
+                                    </button>
+
+                                    <div class="bottoneDaAscoltare offcanvas offcanvas-end" tabindex="-1"
+                                        id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Profile</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="d-flex justify-content-center align-items-center gap-3 pb-3">
+                                                <img class="profileLogoOff" src="./movies/profile.jpg"
+                                                    alt="logo profile">
+                                                <span class="text-white fs-3">Mateusz Sliwinski</span>
                                             </div>
-                                        </div>
-                                        <div>
-                                            <h5 class="text-white mb-2">Coming Soon</h5>
-                                            <div id="videoContainer">
-                                                <iframe src="https://www.youtube.com/embed/4rgYUipGJNo?si=mbzyxpA9dJnoEcmH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <div class="dropdown">
+                                                    <button class="buttonBurgerMenu dropdown-toggle" type="button"
+                                                        data-bs-toggle="dropdown">
+                                                        MY PROFILE
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                                        <li><a class="dropdown-item" href="#">SUBSCRIPTION</a></li>
+                                                        <li><a class="dropdown-item" href="#">PAYMENTS METHODS</a></li>
+                                                        <li><a class="dropdown-item" href="#">DELETE ACCOUNT</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="menuOffCanvas">
+                                                    <ul class="pt-2 ps-0 d-flex gap-2 flex-column align-items-center">
+                                                        <li><a href="#">DEVICES</a></li>
+                                                        <li><a href="#">SETTINGS</a></li>
+                                                        <li><a href="#">LOGOUT</a></li>
+                                                        <li><a href="#">LANGUAGES</a></li>
+                                                        <li><a href="#">HELP CENTER</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="text-white mb-2">Coming Soon</h5>
+                                                <div id="videoContainer">
+                                                    <iframe
+                                                        src="https://www.youtube.com/embed/4rgYUipGJNo?si=mbzyxpA9dJnoEcmH"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                        referrerpolicy="strict-origin-when-cross-origin"
+                                                        allowfullscreen></iframe>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -244,637 +219,636 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+        </nav>
 
-        </div>
-    </nav>
+        <!--SCELTA CORRENTE DEL MENU (ES.TV SHOWS)-->
+        <section class="container-fluid">
+            <div class="row d-flex justify-content-center pb-4 selectGenres">
+                <div class="col-12 d-flex justify-content-between">
+                    <div
+                        class="d-flex gap-2 gap-md-3 flex-column justify-content-center flex-md-row justify-content-md-start">
+                        <h1 class="mb-0 d-flex ms-md-5 fs-1">TV Shows</h1>
+                        <div class="dropdown d-flex align-items-center">
+                            <select id="genres" class="buttonGenres p-1">
+                                <option value="all">All</option>
+                                <option value="trendingNow">Trending Now</option>
+                                <option value="commedy">Watch it Again</option>
+                                <option value="horror">New Releases</option>
+                                <option value="survival">Upcoming</option>
+                                <option value="anime">Best of Month</option>
+                                <option value="fantasy">Continue to Watch</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-md-center align-items-end me-md-5">
+                        <div class="d-flex gap-2">
+                            <input type="radio" id="buttonLines" name="view" class="radioDisplay">
+                            <label for="buttonLines" class="radioLabel">
+                                <ion-icon id="lineette" name="filter-sharp"></ion-icon>
+                            </label>
 
-    <!--SCELTA CORRENTE DEL MENU (ES.TV SHOWS)-->
-    <section class="container-fluid">
-        <div class="row d-flex justify-content-center pt-4 pb-4">
-            <div class="col-12 d-flex justify-content-between">
-                <div
-                    class="d-flex gap-2 gap-md-3 flex-column justify-content-center flex-md-row justify-content-md-start">
-                    <h1 class="mb-0 d-flex ms-md-5 fs-1">TV Shows</h1>
-                    <div class="dropdown d-flex align-items-center">
-                        <select id="genres" class="buttonGenres p-1">
-                            <option value="all">All</option>
-                            <option value="trendingNow">Trending Now</option>
-                            <option value="commedy">Watch it Again</option>
-                            <option value="horror">New Releases</option>
-                            <option value="survival">Upcoming</option>
-                            <option value="anime">Best of Month</option>
-                            <option value="fantasy">Continue to Watch</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="d-flex align-items-md-center align-items-end me-md-5">
-                    <div class="d-flex gap-2">
-                        <input type="radio" id="buttonLines" name="view" class="radioDisplay">
-                        <label for="buttonLines" class="radioLabel">
-                            <ion-icon name="filter-sharp"></ion-icon>
-                        </label>
-
-                        <input type="radio" id="buttonGrid" name="view" class="radioDisplay">
-                        <label for="buttonGrid" class="radioLabel">
-                            <ion-icon name="grid-sharp"></ion-icon>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--ROWS CON I FILM-->
-    <main class="container-fluid">
-        <!--TRENDING NOW-->
-        <!--TITOLO-->
-        <div class="row visibleOnScroll trendingNow d-flex justify-content-center">
-            <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Trending Now</h5>
-            </div>
-        </div>
-        <!--CARDS IN SWIPER-->
-        <div class="row visibleOnScroll trendingNow pb-3">
-            <div class="gradient-overlay"></div>
-            <div class="swiper">
-                <div class="swiper-wrapper ms-md-5">
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/7.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/9.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/10.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/11.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/12.png" alt="">
+                            <input type="radio" id="buttonGrid" name="view" class="radioDisplay">
+                            <label for="buttonGrid" class="radioLabel">
+                                <ion-icon id="quadratini" name="grid-sharp"></ion-icon>
+                            </label>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--Bottoni di navigazione per le cards-->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
+        </section>
 
-        <!--WATCH IT AGAIN-->
-        <!--TITOLO-->
-        <div class="row visibleOnScroll commedy d-flex justify-content-center">
-            <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Watch it Again</h5>
+        <!--ROWS CON I FILM-->
+        <main class="container-fluid">
+            <!--TRENDING NOW-->
+            <!--TITOLO-->
+            <div class="row visibleOnScroll trendingNow d-flex justify-content-center">
+                <div class="col-12">
+                    <h5 class="fs-5 ms-md-5 mb-0">Trending Now</h5>
+                </div>
             </div>
-        </div>
-        <!--CARDS IN SWIPER-->
-        <div class="row visibleOnScroll commedy pb-3">
-            <div class="gradient-overlay"></div>
-            <div class="swiper">
-                <div class="swiper-wrapper ms-md-5">
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/13.png" alt="">
+            <!--CARDS IN SWIPER-->
+            <div class="row visibleOnScroll trendingNow pb-3">
+                <div class="gradient-overlay"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper ms-md-5">
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/7.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/12.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/14.png" alt="">
+                </div>
+                <!--Bottoni di navigazione per le cards-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!--WATCH IT AGAIN-->
+            <!--TITOLO-->
+            <div class="row visibleOnScroll commedy d-flex justify-content-center">
+                <div class="col-12">
+                    <h5 class="fs-5 ms-md-5 mb-0">Watch it Again</h5>
+                </div>
+            </div>
+            <!--CARDS IN SWIPER-->
+            <div class="row visibleOnScroll commedy pb-3">
+                <div class="gradient-overlay"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper ms-md-5">
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/13.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/14.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/15.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/16.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/17.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/18.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/7.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/15.png" alt="">
+                </div>
+                <!--Bottoni di navigazione per le cards-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!--NEW RELEASES-->
+            <!--TITOLO-->
+            <div class="row horror visibleOnScroll d-flex justify-content-center">
+                <div class="col-12">
+                    <h5 class="fs-5 ms-md-5 mb-0">New Releases</h5>
+                </div>
+            </div>
+            <!--CARDS IN SWIPER-->
+            <div class="row horror visibleOnScroll pb-3">
+                <div class="gradient-overlay"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper ms-md-5">
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/18.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/12.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/18.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/16.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/13.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/16.png" alt="">
+                </div>
+                <!--Bottoni di navigazione per le cards-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!--Upcoming-->
+            <!--TITOLO-->
+            <div class="row survival visibleOnScroll d-flex justify-content-center">
+                <div class="col-12">
+                    <h5 class="fs-5 ms-md-5 mb-0">Upcoming</h5>
+                </div>
+            </div>
+            <!--CARDS IN SWIPER-->
+            <div class="row survival visibleOnScroll pb-3">
+                <div class="gradient-overlay"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper ms-md-5">
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/15.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/17.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/18.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/17.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/12.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/4.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/17.png" alt="">
+                </div>
+                <!--Bottoni di navigazione per le cards-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!--Best Of Month-->
+            <!--TITOLO-->
+            <div class="row anime visibleOnScroll d-flex justify-content-center">
+                <div class="col-12">
+                    <h5 class="fs-5 ms-md-5 mb-0">Best of Month</h5>
+                </div>
+            </div>
+            <!--CARDS IN SWIPER-->
+            <div class="row anime visibleOnScroll pb-3">
+                <div class="gradient-overlay"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper ms-md-5">
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/16.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/7.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/17.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/12.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/18.png" alt="">
+                </div>
+                <!--Bottoni di navigazione per le cards-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!--Continue TO WATCH-->
+            <!--TITOLO-->
+            <div class="row fantasy visibleOnScroll d-flex justify-content-center">
+                <div class="col-12">
+                    <h5 class="fs-5 ms-md-5 mb-0">Continue to Watch</h5>
+                </div>
+            </div>
+            <!--CARDS IN SWIPER-->
+            <div class="row fantasy visibleOnScroll pb-4 mb-5">
+                <div class="gradient-overlay"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper ms-md-5">
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/7.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/7.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="filmCard d-flex align-items-center">
+                                <img class="w-100" src="./movies/12.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/2.png" alt="">
+                </div>
+                <!--Bottoni di navigazione per le cards-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </main>
+
+        <!--FOOTER SOCIAL E CONTATTI-->
+        <footer class="container-fluid pt-5 mt-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-8 pb-2">
+                    <!--LOGHI SOCIAL-->
+                    <div class="col-12 d-flex gap-3">
+                        <div class="socialLogos d-flex align-items-center justify-content-center">
+                            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m0 0h20v20h-20z" fill="none" />
+                                <path
+                                    d="m2.89 2h14.23c.49 0 .88.39.88.88v14.24c0 .48-.39.88-.88.88h-4.08v-6.2h2.08l.31-2.41h-2.39v-1.54c0-.7.2-1.18 1.2-1.18h1.28v-2.16c-.22-.03-.98-.09-1.86-.09-1.85 0-3.11 1.12-3.11 3.19v1.78h-2.09v2.41h2.09v6.2h-7.66c-.49 0-.89-.4-.89-.88v-14.24c0-.49.4-.88.89-.88z"
+                                    fill="rgb(130, 130, 130)" />
+                            </svg>
+                        </div>
+                        <div class="socialLogos d-flex align-items-center justify-content-center">
+                            <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m14.5 0h-13c-.825 0-1.5.675-1.5 1.5v13c0 .825.675 1.5 1.5 1.5h13c.825 0 1.5-.675 1.5-1.5v-13c0-.825-.675-1.5-1.5-1.5zm-3.5 2.5c0-.275.225-.5.5-.5h2c.275 0 .5.225.5.5v2c0 .275-.225.5-.5.5h-2c-.275 0-.5-.225-.5-.5zm-3 2.5c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm6 8.5c0 .275-.225.5-.5.5h-11c-.275 0-.5-.225-.5-.5v-6.5h1.1c-.066.322-.1.656-.1 1 0 2.762 2.237 5 5 5s5-2.238 5-5c0-.344-.034-.678-.1-1h1.1z"
+                                    fill="rgb(130, 130, 130)" />
+                            </svg>
+                        </div>
+                        <div class="socialLogos d-flex align-items-center justify-content-center">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </div>
+                        <div class="socialLogos d-flex align-items-center justify-content-center">
+                            <ion-icon name="logo-youtube"></ion-icon>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/5.png" alt="">
+
+                    <!--LISTE DI INFO-->
+                    <div class="d-flex flex-column flex-md-row">
+                        <div class="col-12 col-md-3">
+                            <div class="d-flex">
+                                <ul
+                                    class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
+                                    <li>
+                                        <a href="#">Audio and Subtitles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Media Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/3.png" alt="">
+                        <div class="col-12 col-md-3">
+                            <div class="d-flex">
+                                <ul
+                                    class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
+                                    <li>
+                                        <a href="#">Audio Description</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Investor Relations</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Legal Notices</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/1.png" alt="">
+                        <div class="col-12 col-md-3">
+                            <div class="d-flex">
+                                <ul
+                                    class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
+                                    <li>
+                                        <a href="#">Help Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cookie Preferences</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/9.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/7.png" alt="">
+                        <div class="col-12 col-md-3">
+                            <div class="d-flex">
+                                <ul
+                                    class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
+                                    <li>
+                                        <a href="#">Gift Cards</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms of</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Corporate Informations</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--Bottoni di navigazione per le cards-->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <!--NEW RELEASES-->
-        <!--TITOLO-->
-        <div class="row horror visibleOnScroll d-flex justify-content-center">
-            <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">New Releases</h5>
-            </div>
-        </div>
-        <!--CARDS IN SWIPER-->
-        <div class="row horror visibleOnScroll pb-3">
-            <div class="gradient-overlay"></div>
-            <div class="swiper">
-                <div class="swiper-wrapper ms-md-5">
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/18.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/9.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/10.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/11.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/12.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/18.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/16.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/13.png" alt="">
-                        </div>
-                    </div>
+            <div class="row d-flex justify-content-center pb-2">
+                <div class="col-12 col-md-8 d-flex justify-content-end justify-content-md-start">
+                    <button class="serviceCodeButton p-1">Service Code</button>
                 </div>
             </div>
-            <!--Bottoni di navigazione per le cards-->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <!--Upcoming-->
-        <!--TITOLO-->
-        <div class="row survival visibleOnScroll d-flex justify-content-center">
-            <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Upcoming</h5>
-            </div>
-        </div>
-        <!--CARDS IN SWIPER-->
-        <div class="row survival visibleOnScroll pb-3">
-            <div class="gradient-overlay"></div>
-            <div class="swiper">
-                <div class="swiper-wrapper ms-md-5">
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/15.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/11.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/17.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/9.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/18.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/17.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/12.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/10.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/4.png" alt="">
-                        </div>
-                    </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-8 d-flex justify-content-end justify-content-md-start">
+                    <span class="footerEndSpan">©1997-2019 Netflix,Inc. i-0d00fcda2fdf9c0de</span>
                 </div>
             </div>
-            <!--Bottoni di navigazione per le cards-->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <!--Best Of Month-->
-        <!--TITOLO-->
-        <div class="row anime visibleOnScroll d-flex justify-content-center">
-            <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Best of Month</h5>
-            </div>
-        </div>
-        <!--CARDS IN SWIPER-->
-        <div class="row anime visibleOnScroll pb-3">
-            <div class="gradient-overlay"></div>
-            <div class="swiper">
-                <div class="swiper-wrapper ms-md-5">
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/16.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/7.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/17.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/9.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/10.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/11.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/12.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Bottoni di navigazione per le cards-->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <!--Continue TO WATCH-->
-        <!--TITOLO-->
-        <div class="row fantasy visibleOnScroll d-flex justify-content-center">
-            <div class="col-12">
-                <h5 class="fs-5 ms-md-5 mb-0">Continue to Watch</h5>
-            </div>
-        </div>
-        <!--CARDS IN SWIPER-->
-        <div class="row fantasy visibleOnScroll pb-4 mb-5">
-            <div class="gradient-overlay"></div>
-            <div class="swiper">
-                <div class="swiper-wrapper ms-md-5">
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/7.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/7.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/9.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/10.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/11.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="filmCard d-flex align-items-center">
-                            <img class="w-100" src="./movies/12.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Bottoni di navigazione per le cards-->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </main>
-
-    <!--FOOTER SOCIAL E CONTATTI-->
-    <footer class="container-fluid pt-5 mt-5">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-8 pb-2">
-                <!--LOGHI SOCIAL-->
-                <div class="col-12 d-flex gap-3">
-                    <div class="socialLogos d-flex align-items-center justify-content-center">
-                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m0 0h20v20h-20z" fill="none" />
-                            <path
-                                d="m2.89 2h14.23c.49 0 .88.39.88.88v14.24c0 .48-.39.88-.88.88h-4.08v-6.2h2.08l.31-2.41h-2.39v-1.54c0-.7.2-1.18 1.2-1.18h1.28v-2.16c-.22-.03-.98-.09-1.86-.09-1.85 0-3.11 1.12-3.11 3.19v1.78h-2.09v2.41h2.09v6.2h-7.66c-.49 0-.89-.4-.89-.88v-14.24c0-.49.4-.88.89-.88z"
-                                fill="rgb(130, 130, 130)" />
-                        </svg>
-                    </div>
-                    <div class="socialLogos d-flex align-items-center justify-content-center">
-                        <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m14.5 0h-13c-.825 0-1.5.675-1.5 1.5v13c0 .825.675 1.5 1.5 1.5h13c.825 0 1.5-.675 1.5-1.5v-13c0-.825-.675-1.5-1.5-1.5zm-3.5 2.5c0-.275.225-.5.5-.5h2c.275 0 .5.225.5.5v2c0 .275-.225.5-.5.5h-2c-.275 0-.5-.225-.5-.5zm-3 2.5c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm6 8.5c0 .275-.225.5-.5.5h-11c-.275 0-.5-.225-.5-.5v-6.5h1.1c-.066.322-.1.656-.1 1 0 2.762 2.237 5 5 5s5-2.238 5-5c0-.344-.034-.678-.1-1h1.1z"
-                                fill="rgb(130, 130, 130)" />
-                        </svg>
-                    </div>
-                    <div class="socialLogos d-flex align-items-center justify-content-center">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </div>
-                    <div class="socialLogos d-flex align-items-center justify-content-center">
-                        <ion-icon name="logo-youtube"></ion-icon>
-                    </div>
-                </div>
-
-                <!--LISTE DI INFO-->
-                <div class="d-flex flex-column flex-md-row">
-                    <div class="col-12 col-md-3">
-                        <div class="d-flex">
-                            <ul
-                                class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
-                                <li>
-                                    <a href="#">Audio and Subtitles</a>
-                                </li>
-                                <li>
-                                    <a href="#">Media Center</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="d-flex">
-                            <ul
-                                class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
-                                <li>
-                                    <a href="#">Audio Description</a>
-                                </li>
-                                <li>
-                                    <a href="#">Investor Relations</a>
-                                </li>
-                                <li>
-                                    <a href="#">Legal Notices</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="d-flex">
-                            <ul
-                                class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
-                                <li>
-                                    <a href="#">Help Center</a>
-                                </li>
-                                <li>
-                                    <a href="#">Jobs</a>
-                                </li>
-                                <li>
-                                    <a href="#">Cookie Preferences</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="d-flex">
-                            <ul
-                                class="ulSizeFooter d-flex flex-column justify-content-center gap-1 mb-0 list-unstyled align-items-start pt-1">
-                                <li>
-                                    <a href="#">Gift Cards</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms of</a>
-                                </li>
-                                <li>
-                                    <a href="#">Corporate Informations</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center pb-2">
-            <div class="col-12 col-md-8 d-flex justify-content-end justify-content-md-start">
-                <button class="serviceCodeButton p-1">Service Code</button>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-8 d-flex justify-content-end justify-content-md-start">
-                <span class="footerEndSpan">©1997-2019 Netflix,Inc. i-0d00fcda2fdf9c0de</span>
-            </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

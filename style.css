@@ -14,6 +14,15 @@ body {
    width: 100px;     
 }
 
+.fixedNavbar{
+    position: fixed;
+    z-index: 10;
+    background-color: #141414;
+}
+
+.selectGenres {
+    padding-top: 70px;
+}
 /*DA CELLULARE*/
 
 .burgerMenu {
@@ -155,6 +164,8 @@ body {
 
 .radioLabel ion-icon {
     margin: 0;
+    height: 20px;
+    width: 25px;
 }
 
 .radioDisplay:checked + .radioLabel {
@@ -162,6 +173,24 @@ body {
     border: 1px solid white;
 }
 
+
+#lineette {
+    scale: 1;
+    transition: transform 0.5s ease-in-out;
+}
+
+#lineette:hover {
+    transform: rotate(-360deg);
+}
+
+#quadratini {
+    scale: 1;
+    transition: transform 0.5s ease-in-out;
+}
+
+#quadratini:hover {
+    transform: rotate(180deg);
+}
 
 .filmCard {
     width: 250px;
@@ -264,4 +293,71 @@ body {
 }
 
 
+/*prove di animazione logo netflix nel menu offcanvas in MD*/
 
+.logoNetflix path {
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.n {
+    animation: displayed 0.3s ease forwards;
+    animation-delay: 0.55s;
+}
+
+.e {
+    animation: displayed 0.3s ease forwards;
+    animation-delay: 0.65s;
+}
+
+.t {
+    animation: displayed 0.3s ease forwards;
+    animation-delay: 0.75s;
+}
+
+.f {
+    animation: displayed 0.3s ease forwards;
+    animation-delay: 0.85s;
+}
+
+.l {
+    animation: displayed 0.3s ease forwards;
+    animation-delay: 0.95s;
+}
+
+.i {
+    animation: displayed 0.3s ease forwards;
+    animation-delay: 1.05s;
+}
+
+.x {
+    animation: displayed 0.3s ease forwards;
+    animation-delay: 1.15s;
+}
+
+
+
+@keyframes displayed {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    }
+
+.logoNetfli:hover path {
+    opacity: 1;
+    transform: scale(1);
+    animation: displayed 0.3s ease forwards;
+}
+
+/* IDEA DI OVERLAY PRIMA DEL CARICAMENTO DELLA PAGINA*/
+
+#overlayGeneral {
+    height: 100dvh;
+}
