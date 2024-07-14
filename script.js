@@ -1,5 +1,5 @@
-/* codice per l'animazione iniziale*/
-/*Ascolta il caricamento della pagina e dopo 3 sEcondi fa partire i comandi di aggiunta e rimozione*/
+/*codice per l'animazione iniziale*/
+/*Ascolta il caricamento della pagina e dopo 3 sEcondi fa partire i comandi di aggiunta e rimozione DEL D-NONE*/
 
 const overlayGeneral = document.getElementById("overlayGeneral");
 const contentGeneral = document.getElementById("contentGeneral");
@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 
 /* SWIPER */
+
 const swiper = new Swiper(".swiper", {
     direction: "horizontal",
     navigation: {
@@ -27,6 +28,7 @@ const swiper = new Swiper(".swiper", {
 })
 
 /*SCELTA DEL GENERE DI FILM*/
+
 const genres = document.getElementById("genres");
 const rows = document.querySelectorAll("main .row");
 
@@ -47,7 +49,8 @@ genres.addEventListener("change", ()=>{
 })
 
 /*DA MD IN SU*/
-/*TOGGLE SULLA LENTE COMPARSA INPUT E SCOMPARSA DEL MENU SOLO IN MD*/
+/*TOGGLE SULLA LENTE, COMPARSA INPUT E SCOMPARSA DEL MENU SOLO IN MD*/
+
 const inputContainer = document.getElementById("inputContainer");
 const anchorInput = document.querySelector("#inputContainer a");
 const menuScomparsaAlToggle = document.getElementById("menuScomparsaAlToggle");
@@ -76,6 +79,7 @@ const toggleInput = () => {
 anchorInput.addEventListener("click", toggleInput);
 
 /*LENTE DA MOBILE*/
+
 const inputContainerMobile = document.getElementById("inputContainerMobile");
 const anchorInputMobile = document.querySelector("#inputContainerMobile a");
 
@@ -96,7 +100,7 @@ const toggleInputMobile = () => {
 
 anchorInputMobile.addEventListener("click", toggleInputMobile);
 
-/*Comparsa delle ROW allo scroll*/
+/*Comparsa e scomparsa delle ROW allo scroll*/
 
 const visibleOnScroll = document.querySelectorAll(".visibleOnScroll");
 
@@ -109,7 +113,6 @@ const callBack = (entries, observer)=>{
   entries.forEach(entry =>{
     if (entry.isIntersecting){
       entry.target.classList.add("visible");
-      /*observer.unobserve(entry.target);*/
     } else {
       entry.target.classList.remove("visible");
     }

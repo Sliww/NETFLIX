@@ -6,9 +6,18 @@ body {
 }
 
 
+/* Utility che uso temporaneamente per capire l'area in cui sto lavorando*/
 .personal {
     border: 1px solid white;
 }
+
+/*OVERLAY PRIMA DEL CARICAMENTO DEL CONTENUTO DELLA PAGINA*/
+
+#overlayGeneral {
+    height: 100dvh;
+}
+
+/* CONTENUTO PAGINA NETFLIX*/
 
 .logo img {
    width: 100px;     
@@ -233,13 +242,6 @@ body {
 }
 
 
-
-/*.swiper-button-prev,
-.swiper-button-next {
-    color:white;
-    z-index: 10 !important;
-}*/
-
 .swiper-button-prev {
     color:white;
     z-index: 10 !important;
@@ -293,7 +295,7 @@ body {
 }
 
 
-/*prove di animazione logo netflix nel menu offcanvas in MD*/
+/*prove di animazione logo netflix*/
 
 .logoNetflix path {
     transform-origin: center;
@@ -356,8 +358,3 @@ body {
     animation: displayed 0.3s ease forwards;
 }
 
-/* IDEA DI OVERLAY PRIMA DEL CARICAMENTO DELLA PAGINA*/
-
-#overlayGeneral {
-    height: 100dvh;
-}
